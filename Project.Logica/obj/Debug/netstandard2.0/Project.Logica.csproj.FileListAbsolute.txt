@@ -1,0 +1,8 @@
+E:\repos\Project_Core\Project.Logica\bin\Debug\netstandard2.0\Project.Logica.deps.json
+E:\repos\Project_Core\Project.Logica\bin\Debug\netstandard2.0\Project.Logica.dll
+E:\repos\Project_Core\Project.Logica\bin\Debug\netstandard2.0\Project.Logica.pdb
+E:\repos\Project_Core\Project.Logica\obj\Debug\netstandard2.0\Project.Logica.csprojAssemblyReference.cache
+E:\repos\Project_Core\Project.Logica\obj\Debug\netstandard2.0\Project.Logica.AssemblyInfoInputs.cache
+E:\repos\Project_Core\Project.Logica\obj\Debug\netstandard2.0\Project.Logica.AssemblyInfo.cs
+E:\repos\Project_Core\Project.Logica\obj\Debug\netstandard2.0\Project.Logica.dll
+E:\repos\Project_Core\Project.Logica\obj\Debug\netstandard2.0\Project.Logica.pdb

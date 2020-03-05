@@ -1,0 +1,11 @@
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.csprojAssemblyReference.cache
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.AssemblyInfoInputs.cache
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.AssemblyInfo.cs
+E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\ProjectCore.Logica.deps.json
+E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\ProjectCore.Logica.dll
+E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\ProjectCore.Logica.pdb
+E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\Project_Core.DAL.dll
+E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\Project_Core.DAL.pdb
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.csproj.CopyComplete
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.dll
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.pdb

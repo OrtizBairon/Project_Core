@@ -1,0 +1,7 @@
+E:\repos\Project_Core\Project_Core.DAL\bin\Debug\netstandard2.0\Project_Core.DAL.deps.json
+E:\repos\Project_Core\Project_Core.DAL\bin\Debug\netstandard2.0\Project_Core.DAL.dll
+E:\repos\Project_Core\Project_Core.DAL\bin\Debug\netstandard2.0\Project_Core.DAL.pdb
+E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.AssemblyInfoInputs.cache
+E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.AssemblyInfo.cs
+E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.dll
+E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.pdb

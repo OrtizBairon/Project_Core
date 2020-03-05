@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ProjectCore.Logica.Models.ViewModel.ProjectsIndexViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Projects</h1>
+
+<!--LOS LLAMADOS CON LINKS POR DEFECTO DIFIEREN ACCIONES GET -->
+
+@Html.ActionLink("Create", "Create", "Projects", null, new { @class = "btn btn-primary" })
+
+
+<table class="table table-bordered">
+    <tr>
+        @*<td>@Html.DisplayNameFor(Model => Model.Id);</td>*@ @*//@codigo sharp*@
+        <td>  @Html.DisplayNameFor(Model => Model.Title) </td>
+        <td>  @Html.DisplayNameFor(Model => Model.Details)  </td>
+        <td>  @Html.DisplayNameFor(Model => Model.ExpectedCompletionDate)  </td>
+        <td> @Html.DisplayNameFor(Model => Model.CreatedAt) </td>
+        <td> @Html.DisplayNameFor(Model => Model.UpdateAt) </td>
+
+    </tr>
+    @{
+
+        foreach (var item in Model)
+        {
+        <tr>
+            <td>@Html.DisplayFor(ModelItem => item.Title)</td>
+            <td>@Html.DisplayFor(ModelItem => item.Details)</td>
+            <td>@Html.DisplayFor(ModelItem => item.ExpectedCompletionDate)</td>
+            <td>@Html.DisplayFor(ModelItem => item.CreatedAt)</td>
+            <td>@Html.DisplayNameFor(ModelItem => item.UpdateAt)</td>
+
+
+        </tr>
+        }
+
+    }
+</table>
