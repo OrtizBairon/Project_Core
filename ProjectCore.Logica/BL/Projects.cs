@@ -58,13 +58,48 @@ namespace ProjectCore.Logica.BL
                 Details = details,
                 ExpectedCompletionDate = expectedCompletionDate,
                 TenantId = tenantId,
-                CreatedAt = DateTime.Now
-               // UpdatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now
 
             });
 
             _Context.SaveChanges();
 
+        }
+
+        public void UpdateProjects(int id,
+           string title,
+           string details,
+           DateTime? expectedCompletionDate)
+        {
+
+            Project_Core.DAL.Models.Project_CoreContext _Context = new Project_Core.DAL.Models.Project_CoreContext();
+
+            var projectEF = _Context.Projects.Where(x => x.Id == id).FirstOrDefault();
+
+            projectEF.Title = title;
+            projectEF.Details = details;
+            projectEF.ExpectedCompletionDate = expectedCompletionDate;
+            projectEF.UpdatedAt = DateTime.Now;
+
+            _Context.SaveChanges();
+        }
+
+
+        public void DeleteProjects(int id)
+        {
+
+            Project_Core.DAL.Models.Project_CoreContext _Context = new Project_Core.DAL.Models.Project_CoreContext();
+
+            //validamos dependencias a nivel de bd de la tabla projects
+            if (_Context.Artifacts.Any(x => x.ProjectId == id) || _Context.UserProjects.Any(x => x.ProjectId == id))
+                return;
+
+            var projectEF = _Context.Projects.Where(x => x.Id == id).FirstOrDefault();
+
+            _Context.Projects.Remove(projectEF);
+
+            _Context.SaveChanges(); /* --> aplica todos los cambios a nivel de objetos en la base de datos*/
         }
     }
 }

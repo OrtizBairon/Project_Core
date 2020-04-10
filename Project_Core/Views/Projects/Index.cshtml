@@ -7,7 +7,7 @@
 
 <!--LOS LLAMADOS CON LINKS POR DEFECTO DIFIEREN ACCIONES GET -->
 
-@Html.ActionLink("Create", "Create", "Projects", null, new { @class = "btn btn-primary" })
+@Html.ActionLink(" ", "Create", "Projects", null, new { @class = "btn btn-primary fas fa-plus-square"})
 
 
 <table class="table table-bordered">
@@ -17,8 +17,8 @@
         <td>  @Html.DisplayNameFor(Model => Model.Details)  </td>
         <td>  @Html.DisplayNameFor(Model => Model.ExpectedCompletionDate)  </td>
         <td> @Html.DisplayNameFor(Model => Model.CreatedAt) </td>
-        <td> @Html.DisplayNameFor(Model => Model.UpdateAt) </td>
-
+        <td> @Html.DisplayNameFor(Model => Model.UpdatedAt) </td>
+        <td></td>
     </tr>
     @{
 
@@ -29,9 +29,13 @@
             <td>@Html.DisplayFor(ModelItem => item.Details)</td>
             <td>@Html.DisplayFor(ModelItem => item.ExpectedCompletionDate)</td>
             <td>@Html.DisplayFor(ModelItem => item.CreatedAt)</td>
-            <td>@Html.DisplayNameFor(ModelItem => item.UpdateAt)</td>
-
-
+            <td>@Html.DisplayFor(ModelItem => item.UpdatedAt)</td>
+            <td>
+                @Html.ActionLink(" ", "Edit", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-pen-square" })
+                @Html.ActionLink(" ", "Details", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-info" })
+                @Html.ActionLink(" ", "Delete", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-trash" })
+            </td>
+           
         </tr>
         }
 

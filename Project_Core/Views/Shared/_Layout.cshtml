@@ -35,16 +35,17 @@
             </div>
             <div class="list-group list-group-flush">
 
-                <a class="list-group-item list-group-item-action bg-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="list-group-item list-group-item-action bg-light fas fa-home" asp-area="" asp-controller="Home" asp-action="Index"> Home</a>
 
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    <a class="list-group-item list-group-item-action bg-light" asp-area="" asp-controller="Projects" asp-action="Index">Projects</a>
+                    <a class="list-group-item list-group-item-action bg-light fas fa-tasks" asp-area="" asp-controller="Projects" asp-action="Index"> Projects</a>
+
                 }
                 else
                 {
-                    <a class="list-group-item list-group-item-action bg-light" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                    <a class="list-group-item list-group-item-action bg-light" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    <a class="list-group-item list-group-item-action bg-light fas fa-address-card" asp-area="" asp-controller="Home" asp-action="About"> About</a>
+                    <a class="list-group-item list-group-item-action bg-light fas fa-id-card-alt" asp-area="" asp-controller="Home" asp-action="Contact"> Contact</a>
                 }
             </div>
         </div>

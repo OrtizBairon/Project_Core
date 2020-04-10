@@ -9,3 +9,4 @@ E:\repos\Project_Core\ProjectCore.Logica\bin\Debug\netstandard2.0\Project_Core.D
 E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.csproj.CopyComplete
 E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.dll
 E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.pdb
+E:\repos\Project_Core\ProjectCore.Logica\obj\Debug\netstandard2.0\ProjectCore.Logica.csproj.CoreCompileInputs.cache

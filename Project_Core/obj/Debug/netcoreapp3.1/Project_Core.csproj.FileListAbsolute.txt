@@ -133,7 +133,6 @@ E:\repos\Project_Core\Project_Core\bin\Debug\netcoreapp3.1\Project_Core.DAL.pdb
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.csprojAssemblyReference.cache
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\staticwebassets\Project_Core.StaticWebAssets.Manifest.cache
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\staticwebassets\Project_Core.StaticWebAssets.xml
-E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.MvcApplicationPartsAssemblyInfo.cs
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.MvcApplicationPartsAssemblyInfo.cache
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.RazorAssemblyInfo.cache
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.RazorAssemblyInfo.cs
@@ -198,3 +197,8 @@ E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.csproj.C
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.dll
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.pdb
 E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Razor\Views\Projects\Create.cshtml.g.cs
+E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.csproj.CoreCompileInputs.cache
+E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.genruntimeconfig.cache
+E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Razor\Views\Projects\Edit.cshtml.g.cs
+E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Project_Core.MvcApplicationPartsAssemblyInfo.cs
+E:\repos\Project_Core\Project_Core\obj\Debug\netcoreapp3.1\Razor\Views\Projects\Details.cshtml.g.cs
