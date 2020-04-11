@@ -6,3 +6,4 @@ E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL
 E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.dll
 E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.pdb
 E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.csproj.CoreCompileInputs.cache
+E:\repos\Project_Core\Project_Core.DAL\obj\Debug\netstandard2.0\Project_Core.DAL.csprojAssemblyReference.cache

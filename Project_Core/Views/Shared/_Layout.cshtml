@@ -41,7 +41,13 @@
                 {
                     <a class="list-group-item list-group-item-action bg-light fas fa-tasks" asp-area="" asp-controller="Projects" asp-action="Index"> Projects</a>
 
-                }
+                    if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink(" Activities", "Index", "Activities", null, new { @class = "list-group-item list-group-item-action bg-light fab fa-adn" })
+                        @Html.ActionLink(" Priorities", "Index", "Priorities", null, new { @class = "list-group-item list-group-item-action bg-light fab fa-product-hunt" })
+                        @Html.ActionLink(" States", "Index", "States", null, new { @class = "list-group-item list-group-item-action bg-light fab fa-stripe-s" })
+                    }
+                }           
                 else
                 {
                     <a class="list-group-item list-group-item-action bg-light fas fa-address-card" asp-area="" asp-controller="Home" asp-action="About"> About</a>

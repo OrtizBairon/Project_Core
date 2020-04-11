@@ -7,12 +7,13 @@
 
 <!--LOS LLAMADOS CON LINKS POR DEFECTO DIFIEREN ACCIONES GET -->
 
-@Html.ActionLink(" ", "Create", "Projects", null, new { @class = "btn btn-primary fas fa-plus-square"})
+@Html.ActionLink(" ", "Create", "Projects", null, new { @class = "btn btn-primary fas fa-plus-square" })
 
 
 <table class="table table-bordered">
     <tr>
         @*<td>@Html.DisplayNameFor(Model => Model.Id);</td>*@ @*//@codigo sharp*@
+        <td>  Tasks </td>
         <td>  @Html.DisplayNameFor(Model => Model.Title) </td>
         <td>  @Html.DisplayNameFor(Model => Model.Details)  </td>
         <td>  @Html.DisplayNameFor(Model => Model.ExpectedCompletionDate)  </td>
@@ -24,19 +25,21 @@
 
         foreach (var item in Model)
         {
-        <tr>
-            <td>@Html.DisplayFor(ModelItem => item.Title)</td>
-            <td>@Html.DisplayFor(ModelItem => item.Details)</td>
-            <td>@Html.DisplayFor(ModelItem => item.ExpectedCompletionDate)</td>
-            <td>@Html.DisplayFor(ModelItem => item.CreatedAt)</td>
-            <td>@Html.DisplayFor(ModelItem => item.UpdatedAt)</td>
-            <td>
-                @Html.ActionLink(" ", "Edit", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-pen-square" })
-                @Html.ActionLink(" ", "Details", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-info" })
-                @Html.ActionLink(" ", "Delete", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-trash" })
-            </td>
-           
-        </tr>
+            <tr>
+                <td>@Html.ActionLink(" ", "Index", "Tasks", new { projectId = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-asterisk" })</td>
+                <td>@Html.DisplayFor(ModelItem => item.Title)</td>
+                <td>@Html.DisplayFor(ModelItem => item.Details)</td>
+                <td>@Html.DisplayFor(ModelItem => item.ExpectedCompletionDate)</td>
+                <td>@Html.DisplayFor(ModelItem => item.CreatedAt)</td>
+                <td>@Html.DisplayFor(ModelItem => item.UpdatedAt)</td>
+                <td>
+                    @Html.ActionLink(" ", "Edit", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-pen-square" })
+                    @Html.ActionLink(" ", "Details", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-info" })
+                    @Html.ActionLink(" ", "Delete", "Projects", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-trash" })
+
+                </td>
+
+            </tr>
         }
 
     }

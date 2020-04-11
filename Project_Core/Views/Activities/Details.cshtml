@@ -1,0 +1,34 @@
+﻿@model Project_Core.DAL.Models.Activities
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details Activities</h1>
+
+<div>
+
+    <hr />
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.Name)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.Active)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Active)
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    @Html.ActionLink(" ", "Edit", "Activities", new { id = Model.Id, }, new { @class = "btn btn-primary btn-sm fas fa-pen-square" })
+    @Html.ActionLink(" ", "Index", "Activities", null, new { @class = "btn btn-primary fas fa-chevron-circle-left" })
+</div>

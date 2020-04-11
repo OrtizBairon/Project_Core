@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Project_Core.DAL.Models.States>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>States</h1>
+
+@Html.ActionLink(" ", "Create", "States", null, new { @class = "btn btn-primary fas fa-plus-square" })
+
+<table class="table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    @Html.ActionLink(" ", "Edit", "States", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-pen-square" })
+                    @Html.ActionLink(" ", "Details", "States", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-info" })
+                    @Html.ActionLink(" ", "Delete", "States", new { id = item.Id, }, new { @class = "btn btn-primary btn-sm fas fa-trash" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

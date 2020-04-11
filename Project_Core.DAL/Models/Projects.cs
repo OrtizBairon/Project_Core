@@ -8,6 +8,7 @@ namespace Project_Core.DAL.Models
         public Projects()
         {
             Artifacts = new HashSet<Artifacts>();
+            Tasks = new HashSet<Tasks>();
             UserProjects = new HashSet<UserProjects>();
         }
 
@@ -21,6 +22,7 @@ namespace Project_Core.DAL.Models
 
         public virtual Tenants Tenant { get; set; }
         public virtual ICollection<Artifacts> Artifacts { get; set; }
+        public virtual ICollection<Tasks> Tasks { get; set; }
         public virtual ICollection<UserProjects> UserProjects { get; set; }
     }
 }

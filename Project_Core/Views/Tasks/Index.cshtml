@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProjectCore.Logica.Models.ViewModel.TasksIndexViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tasks</h1>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"></li>
+        <li class="breadcrumb-item">
+            @Html.ActionLink("Projects", "Index", "Projects")
+            </li>
+        <li class="breadcrumb-item active" aria-current="page">Tasks Of @ViewBag.Project.Title</li>
+    </ol>
+</nav>
+<!--LOS LLAMADOS CON LINKS POR DEFECTO DIFIEREN ACCIONES GET -->
+@Html.ActionLink(" ", "Create", "Tasks", new { projectId = ViewBag.Project.Id }, new { @class = "btn btn-primary fas fa-plus-square" })
+
+
+<table class="table table-bordered">
+    <tr>
+        <td>  @Html.DisplayNameFor(Model => Model.Title) </td>
+        <td>  @Html.DisplayNameFor(Model => Model.Details)  </td>
+        <td>  @Html.DisplayNameFor(Model => Model.ExpirationDate)  </td>
+        <td> @Html.DisplayNameFor(Model => Model.IsCompleted) </td>
+        <td> @Html.DisplayNameFor(Model => Model.Effort) </td>
+        <td> @Html.DisplayNameFor(Model => Model.RemainingWork) </td>
+        <td> @Html.DisplayNameFor(Model => Model.State) </td>
+        <td> @Html.DisplayNameFor(Model => Model.Activity) </td>
+        <td> @Html.DisplayNameFor(Model => Model.Priority) </td>
+    </tr>
+    @{foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(ModelItem => item.Title)</td>
+                <td>@Html.DisplayFor(ModelItem => item.Details)</td>
+                <td>@Html.DisplayFor(ModelItem => item.ExpirationDate)</td>
+                <td>@Html.DisplayFor(ModelItem => item.IsCompleted)</td>
+                <td>@Html.DisplayFor(ModelItem => item.Effort)</td>
+                <td>@Html.DisplayFor(ModelItem => item.RemainingWork)</td>
+                <td>@Html.DisplayFor(ModelItem => item.State)</td>
+                <td>@Html.DisplayFor(ModelItem => item.Activity)</td>
+                <td>@Html.DisplayFor(ModelItem => item.Priority)</td>
+            </tr>
+        }
+
+    }
+</table>
